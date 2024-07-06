@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    /* background-color: blueviolet; */
+    animation: rotate 1.2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        background-color: #FF7EE2;
+    }
+    25% {
+        background-color: #FFA38F;
+    }
+    50% {
+        background-color: #FFD18E;
+    }
+    75% {
+        background-color: #E9FF97;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: #FF7EE2;
+    }
+}
