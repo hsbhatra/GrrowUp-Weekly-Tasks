@@ -37,7 +37,7 @@ body, html {
 }
 
 .ball:nth-child(5) {
-    animation-delay: 0.4s;
+    animation-delay: 0.4s; 
 }
 
 @keyframes bounce {

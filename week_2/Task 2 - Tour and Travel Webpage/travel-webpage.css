@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+    color: #393E46;
+}
+
+.header {
+    background-color: #191919;
+    color: #EEEEEE;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    max-height: 80px;
+}
+
+.header:hover {
+    opacity: 0.9;
+}
+
+.header .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header .nav-links li {
+    margin: 0 15px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links a {
+    color: #EEEEEE;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header .nav-links a:hover {
+    color: #E3651D;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    border: 2px solid #393E46;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+#home {
+    min-height: 200px;
+    background-image: url("https://www.thetimes.com/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffaa1b3fc-1e55-11ed-add4-d333562d46fb.jpg?crop=5837%2C3283%2C0%2C304&resize=1200");
+    background-size: cover;
+}
+
+#home .container {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    border: 1.5px solid #750E21;
+    background-color: #750E21;
+    color: #EEEEEE;
+    opacity: 0.65;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.container:hover {
+    transform: scale(1.2);
+}
+
+#destinations {
+    background-image: url("https://content.r9cdn.net/rimg/dimg/c0/5f/829da036-city-35600-17ea25befc5.jpg?crop=true&width=1020&height=498");
+    background-size: cover;
+    border: 1px solid #393E46;
+    margin: auto;
+}
+
+.destination-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#gallery {
+    justify-content: center;
+    align-items: center;
+    background-color: #750E21;
+}
+
+#gallery h2 {
+    padding: auto;
+    color: #EEEEEE;
+}
+
+.gallery-images {
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.gallery-images img {
+    width: 120px;
+    height: auto;
+}
+
+.gallery-images img:hover {
+    transform: scale(4);
+}
+
+#gallery p a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #191919;
+    color: #EEEEEE;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header, .section, .footer {
+    animation: fadeIn 2s ease;
+}
+
+.destination-card {
+    animation: fadeIn 2s ease;
+}

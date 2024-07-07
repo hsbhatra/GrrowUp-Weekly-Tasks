@@ -1,0 +1,72 @@
+/* Color Theme
+#222831 - Dark Background
+#393E46 - Light Background
+#00ADB5 - Accent Color
+#EEEEEE - Light Text Color
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #222831;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    height: auto;
+    background-color: #393E46; /* Light Background */
+    color: #EEEEEE; /* Light Text Color */
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+.right ul li a {
+    color: #EEEEEE; /* Light Text Color */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right ul li a:hover {
+    color: #00ADB5; /* Accent Color */
+}
+
+.left a {
+    color: #EEEEEE; /* Light Text Color */
+    text-decoration: none;
+}
+
+.left:hover {
+    color: #00ADB5; /* Accent Color */
+}
+
+.left {
+    width: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+    color: #222831; /* Dark Background */
+}
+
+.logo {
+    color: #EEEEEE;
+    font-style: italic;
+    margin-left: -50px;
+}
