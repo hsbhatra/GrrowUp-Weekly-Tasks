@@ -1,8 +1,10 @@
 /* Color Theme
-#222831 - Dark Background
-#393E46 - Light Background
-#00ADB5 - Accent Color
-#EEEEEE - Light Text Color
+#2C3E50 - Dark Background
+#ECF0F1 - Light Background
+#E74C3C - Accent Color 1
+#3498DB - Accent Color 2
+#2ECC71 - Accent Color 3
+#FFFFFF - Light Text Color
 */
 
 * {
@@ -11,7 +13,7 @@
 }
 
 body {
-    background-color: #222831;
+    background-color: #2C3E50; /* Dark Background */
 }
 
 nav {
@@ -20,8 +22,8 @@ nav {
     align-items: center;
     min-height: 50px;
     height: auto;
-    background-color: #393E46; /* Light Background */
-    color: #EEEEEE; /* Light Text Color */
+    background-color: #ECF0F1; /* Light Background */
+    color: #2C3E50; /* Dark Background */
     width: 100%;
 }
 
@@ -37,22 +39,23 @@ nav ul li {
 }
 
 .right ul li a {
-    color: #EEEEEE; /* Light Text Color */
+    color: #2C3E50; /* Dark Background */
     font-weight: bold;
     text-decoration: none;
 }
 
 .right ul li a:hover {
-    color: #00ADB5; /* Accent Color */
+    color: #E74C3C; /* Accent Color 1 */
+    transform: scale(1.2);
 }
 
 .left a {
-    color: #EEEEEE; /* Light Text Color */
+    color: #2C3E50; /* Dark Background */
     text-decoration: none;
 }
 
 .left:hover {
-    color: #00ADB5; /* Accent Color */
+    color: #3498DB; /* Accent Color 2 */
 }
 
 .left {
@@ -62,11 +65,44 @@ nav ul li {
     display: flex;
     justify-content: center;
     margin-left: 80px;
-    color: #222831; /* Dark Background */
+    color: #2C3E50; /* Dark Background */
 }
 
 .logo {
-    color: #EEEEEE;
+    color: #2C3E50; /* Dark Background */
     font-style: italic;
     margin-left: -50px;
 }
+
+/* Main Content of the body */
+
+main {
+    background-color: #ECF0F1; /* Light Background */
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;    
+    height: 500px;
+}
+
+.container div {
+    width: 35%;
+    min-height: 450px;
+    height: auto;
+    margin: 30px auto;
+    background-color: #2C3E50; /* Dark Background */
+    border-radius: 15%;
+    color: #FFFFFF; /* Light Text Color */
+    padding: 20px;
+}
+
+.container div:hover {
+    background-color: #2ECC71; /* Accent Color 3 */
+    color: #2C3E50; /* Dark Background */
+}
+
