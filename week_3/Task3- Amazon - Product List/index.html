@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="home-kitchen">Home & Kitchen</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="price-range">Price Range:</label>
+                <input type="range" id="price-range" min="0" max="20000" step="100">
+                <span id="min-value">0</span><span id="max-value">20k</span>
+            </div>
+
+            <div class="filter-group">
+                <label for="discount">Discount:</label>
+                <select id="discount">
+                    <option value="0-20">0% to 20%</option>
+                    <option value="20-40">20% to 40%</option>
+                    <option value="40-70">40% to 70%</option>
+                    <option value="70-80">70% to 80%</option>
+                    <option value="80-90">80% to 90%</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="all">All</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                </select>
+            </div>
+        
+            <div class="filter-group">
+                <label for="brand">Brand:</label>
+                <select id="brand">
+                    <option value="all">All</option>
+                    <option value="apple">Apple</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="nike">Nike</option>
+                    <option value="adidas">Adidas</option>
+                </select>
+            </div>
+        </aside>
+        
+        <main class="product-listing">
+            <div class="product-card">
+                <img src="product1.png" alt="Product Image">
+                <h3>JBL Headphone</h3>
+                <p class="price">$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="product2.png" alt="Product Image">
+                <h3>Samsung Earbuds</h3>
+                <p class="price">$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="product3.png" alt="Product Image">
+                <h3>HP Laptop</h3>
+                <p class="price">$4999.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="product4.png" alt="Product Image">
+                <h3>Induction</h3>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="product5.png" alt="Product Image">
+                <h3>Gamming Console</h3>
+                <p class="price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more product cards as needed -->
+            
+        </main>
+    </div>
+</body>
+</html>
