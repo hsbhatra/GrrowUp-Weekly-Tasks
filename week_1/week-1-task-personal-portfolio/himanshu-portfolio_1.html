@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Sharma - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="himanshu-portfolio_1.css">
+</head>
+<body>
+    <!-- Color Palette -->
+    <!-- https://colorhunt.co/palette/f0f4f81a3d6b4b6584d1e6f1 -->
+    <header>
+        <nav>
+            <div class="left logo" id="logo">
+                <a href="himanshu-portfolio.html">Himanshu</a>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="himanshu-portfolio.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="about">
+            <div class="leftSection">
+                <div>Hello mates, <br>
+                    My name is <span>Himanshu Sharma</span> and I am 
+                    <em>
+                        <!-- Element to contain animated typing -->
+                        <span id="element"></span>
+                    </em>
+                    
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="img/developer.png" alt="">
+            </div>
+        </section>
+
+        <br>
+
+        <section class="secondSection">
+            <span style="color: #2a5d7b;">What I have done so far</span>
+            <h1>Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="img/youtube.png" alt="">
+                    <div class="vertical-title">
+                        Jr. Danjo Developer <br><span class="tenure">2022-2023</span>
+                    </div>
+                    <div class="vertical-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo fugiat? Iusto modi architecto dolores dolore quibusdam quod excepturi iste dolor, nobis amet, placeat eligendi? Accusamus voluptatum rem laudantium!
+                    </div>
+                </div>
+                <div class="vertical"><img class="image-top" src="img/facebook.png" alt="">
+                    <div class="vertical-title">
+                        Sr. Front End Developer <br><span class="tenure">2022-2023</span>
+                    </div>
+                    <div class="vertical-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo fugiat? Iusto modi architecto dolores dolore quibusdam quod excepturi iste dolor, nobis amet, placeat eligendi? Accusamus voluptatum rem laudantium!
+                    </div></div>
+                <div class="vertical"><img class="image-top" src="img/whatsapp.png" alt="">
+                    <div class="vertical-title">
+                        Lead Full Stack Developer <br><span class="tenure">2022-2023</span>
+                    </div>
+                    <div class="vertical-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo fugiat? Iusto modi architecto dolores dolore quibusdam quod excepturi iste dolor, nobis amet, placeat eligendi? Accusamus voluptatum rem laudantium!
+                    </div></div>
+                <div class="vertical"><img class="image-top" src="img/youtube.png" alt="">
+                    <div class="vertical-title">
+                        Sr. Danjo Backend Developer <br><span class="tenure">2022-2023</span>
+                    </div>
+                    <div class="vertical-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo fugiat? Iusto modi architecto dolores dolore quibusdam quod excepturi iste dolor, nobis amet, placeat eligendi? Accusamus voluptatum rem laudantium!
+                    </div></div>
+                <div class="vertical"><img class="image-top" src="img/netflix.png" alt="">
+                    <div class="vertical-title">
+                        Sr. Danjo, React Full Stack Developer <br><span class="tenure">2022-2023</span>
+                    </div>
+                    <div class="vertical-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo fugiat? Iusto modi architecto dolores dolore quibusdam quod excepturi iste dolor, nobis amet, placeat eligendi? Accusamus voluptatum rem laudantium!
+                    </div></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['an aspiring Web Developer.', 'an enthusiastic Django Developer.'],
+      typeSpeed: 80,
+    });
+  </script>
+</body>
+</html>
